@@ -92,7 +92,12 @@ add_action( 'widgets_init', 'underscores_widgets_init' );
  * Enqueue scripts and styles.
  */
 function underscores_scripts() {
+	
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
+
 	wp_enqueue_style( 'underscores-style', get_stylesheet_uri() );
+
+	wp_enqueue_style( 'responsive', get_template_directory_uri() . '/css/media.css' );
 
 	wp_enqueue_script( 'underscores-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

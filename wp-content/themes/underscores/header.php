@@ -23,15 +23,21 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'underscores' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div>
+		<strong class="logo col-xs-4"><a href="/">Mark David Hospitality</a></strong>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'underscores' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<nav id="nav" class="col-xs-8 header-nav">
+			<ul class="col-xs-9 menu-pages">
+				<li><a href="/about.html">about</a></li>
+				<li><a href="/contact.html">contact</a></li>
+				<li><a href="/newsletter.html">newsletter</a></li>
+            </ul>
+            <ul class="social col-xs-3 menu-social">
+				<li><a href="https://www.facebook.com/markdavidcatering"><img src="http://www.markdavidcatering.com/images/fb.jpg"></a></li>
+                <li><a href="https://twitter.com/MDHospitality1"><img src="http://www.markdavidcatering.com/images/twt.jpg"></a></li>
+                <li><a href="http://instagram.com/mdhospitality"><img src="http://www.markdavidcatering.com/images/insta.jpg"></a></li>
+			</ul>
+		</nav>
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
