@@ -23,9 +23,9 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'underscores' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<strong class="logo col-xs-4"><a href="/">Mark David Hospitality</a></strong>
+		<strong class="logo col-xs-12"><a href="/">Mark David Hospitality</a></strong>
 
-		<nav id="nav" class="col-xs-8 header-nav">
+		<nav id="nav" class="col-xs-12 header-nav">
 			<ul class="col-xs-9 menu-pages">
 				<li><a href="/about.html">about</a></li>
 				<li><a href="/contact.html">contact</a></li>
@@ -37,6 +37,8 @@
                 <li><a href="http://instagram.com/mdhospitality"><img src="http://www.markdavidcatering.com/images/insta.jpg"></a></li>
 			</ul>
 		</nav>
+
+		<span class="slogan col-xs-12">experience proven luxury</span>
 
 	</header><!-- #masthead -->
 

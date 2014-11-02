@@ -3,20 +3,22 @@
 		float: none;
 		width: 100%;
 		height: 110px;
-		background: linear-gradient(to bottom,  #402a56 0%,#38234e 24%,#1c0830 81%,#16022a 100%); // W3C 
-		}
+		background: linear-gradient(to bottom, #16022a 0%,#38234e 100%);
+		height: 297px; 
+	}
 
 	.logo {
-		height: 110px;
+		height: 52px;
 		text-indent:-9999px;
-		background:url(http://www.markdavidcatering.com/images/logo.png) no-repeat;
-		background-size:70%;
-		background-position: 37% -6%;
+		background:url(http://www.markdavidcatering.com/images/logo-mobile.png) no-repeat;
+		background-position: center center;
+		margin-top: 20px;
 	}
 
 	.header-nav {
 		font-size: 10px;
 		height: 110px;
+		margin-top: 20px;
 	}
 
 	ul.menu-pages, ul.menu-social {
@@ -43,4 +45,41 @@
 	.home-gallery, .home-gallery > div, .home-gallery p {
 		margin: 0px;
 	}
+
+	body.page-template-home-php figure {
+		position: relative;
+		margin: 0px;
+		width: 33% !important;
+	}
+
+	body.page-template-home-php figure img {
+		position: relative;
+	}
+
+	body.page-template-home-php figure figcaption {
+		top: 20%;
+		position: absolute;
+		font-size: 10px;
+		text-transform: uppercase;
+		font-family: estiloregular, Arial, Helvetica, sans-serif;
+		text-align: center;
+		width: 100%;
+		background: rgba(255, 255, 255, 0.65);
+		height: 100px;
+	}
+
+	.home-img-caption {
+		position: relative;
+		top: 34%;
+	}
+
+	.slogan {
+		font: 18px/20px estiloregular, Arial, Helvetica, sans-serif;
+		color: #5a456f;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+		margin-top: 35px;
+	}
+
 }
