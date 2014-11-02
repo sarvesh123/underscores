@@ -413,13 +413,13 @@ textarea {
 /*--------------------------------------------------------------
 5.1 Links
 --------------------------------------------------------------*/
-a {
+/*a {
 	color: royalblue;
 }
 
-a:visited {
+/*a:visited {
 	color: purple;
-}
+}*/
 
 a:hover,
 a:focus,
@@ -790,4 +790,9 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+figcaption a, figcaption a:hover {
+	color: #000 !important;
+	text-decoration: none;
 }
