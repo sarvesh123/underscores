@@ -662,7 +662,6 @@ a:active {
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
 }
@@ -675,6 +674,8 @@ a:active {
 figcaption a, figcaption a:hover {
 	color: #000 !important;
 	text-decoration: none;
+	position: relative;
+	top: 33%;
 }
 
 .destination-property img {
@@ -836,4 +837,83 @@ object {
 .category-destinations .wcflex-next,
 .category-destinations .wcflex-prev {
 	opacity: 1;
+}
+
+.site-header {
+	width: 139px;
+	float: left;
+	background: linear-gradient(to bottom, #16022a 0%,#38234e 100%);
+	position: fixed;
+	bottom: 0;
+	height: 100%;
+}
+
+.site-content {
+	float: left;
+	position: absolute;
+	left: 139px;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+}
+
+body.page-template-home-php figure {
+	position: relative;
+	margin: 0px;
+	width: 27% !important;
+	height: 100%;
+}
+
+.logo {
+	height: 525px;
+	text-indent:-9999px;
+	background:url(http://www.markdavidcatering.com/images/logo.png) no-repeat;
+	background-position: top center;
+	margin-top: 20px;
+	background-size: 70%;
+	width: 104px;
+}
+
+body.page-template-home-php figure figcaption {
+	top: 20%;
+	position: absolute;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-family: estiloregular, Arial, Helvetica, sans-serif;
+	text-align: center;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.65);
+	height: 162px;
+}
+
+body.page-template-home-php figure img {
+	position: relative;
+	max-width: none;
+	height: 100%;
+}
+
+.site-main, .content-area, .home-gallery, .home-gallery > .entry-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.home-gallery figure > a {
+	float: left;	
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.home-catering {
+	margin-left: -53px;
+}
+
+.home-destinations {
+	margin-left: -71px;
+}
+
+.home-passover {
+	margin-left: -75px;
 }
