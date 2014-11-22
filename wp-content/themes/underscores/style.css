@@ -842,7 +842,13 @@ object {
 .site-header {
 	width: 139px;
 	float: left;
-	background: linear-gradient(to bottom, #16022a 0%,#38234e 100%);
+	background-color: #402a56 !important; /* Old browsers */
+	background: -moz-linear-gradient(top,  #402a56 0%, #38234e 24%, #1c0830 81%, #16022a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#402a56), color-stop(24%,#38234e), color-stop(81%,#1c0830), color-stop(100%,#16022a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #402a56 0%,#38234e 24%,#1c0830 81%,#16022a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #402a56 0%,#38234e 24%,#1c0830 81%,#16022a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #402a56 0%,#38234e 24%,#1c0830 81%,#16022a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #402a56 0%,#38234e 24%,#1c0830 81%,#16022a 100%); /* W3C */
 	position: fixed;
 	bottom: 0;
 	height: 100%;
@@ -854,18 +860,18 @@ object {
 	left: 139px;
 	bottom: 0;
 	height: 100%;
-	width: 100%;
+	right: 0;
 }
 
 body.page-template-home-php figure {
 	position: relative;
 	margin: 0px;
-	width: 27% !important;
+	width: 33.33% !important;
 	height: 100%;
 }
 
 .logo {
-	height: 525px;
+	height: 390px;
 	text-indent:-9999px;
 	background:url(http://www.markdavidcatering.com/images/logo.png) no-repeat;
 	background-position: top center;
@@ -889,7 +895,7 @@ body.page-template-home-php figure figcaption {
 body.page-template-home-php figure img {
 	position: relative;
 	max-width: none;
-	height: 100%;
+	width: 100%;
 }
 
 .site-main, .content-area, .home-gallery, .home-gallery > .entry-content {
@@ -906,14 +912,39 @@ body.page-template-home-php figure img {
 	overflow: hidden;
 }
 
-.home-catering {
-	margin-left: -53px;
+ul.menu-pages {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	text-transform: uppercase;
 }
 
-.home-destinations {
-	margin-left: -71px;
+ul.menu-pages a {
+	color: #fff;
 }
 
-.home-passover {
-	margin-left: -75px;
+ul.social {
+	list-style: none;
+	margin: 16px 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+}
+
+ul.social li {
+	display: inline-block;
+	padding: 2px;
+}
+ul.social img {
+	max-width: none;
+}
+
+.slogan {
+	font: 18px/20px estiloregular, Arial, Helvetica, sans-serif;
+	color: #5a456f;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
 }

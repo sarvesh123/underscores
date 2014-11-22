@@ -1,3 +1,33 @@
+@media (max-width: 1024px) {
+	body.page-template-home-php figure img {
+		width: auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.home-catering {
+		margin-left: -63px;
+	}
+
+	.home-destinations {
+		margin-left: -74px;
+	}
+
+	.home-passover {
+		margin-left: -79px;
+	}
+
+	body.page-template-home-php figure img {
+		margin-left: -49px;
+		margin-top: 0;
+		height: 100%;
+		width: auto;
+	}
+
+	.wp-caption .wp-caption-text {
+		margin: -5.1925em 0;
+	}
+}
 @media (max-width: 568px) {
 	.site-header {
 		float: none;
@@ -88,4 +118,7 @@
 		width: 33.33% !important;
 	}
 
+	.wp-caption .wp-caption-text {
+		margin: 0;
+	}
 }
